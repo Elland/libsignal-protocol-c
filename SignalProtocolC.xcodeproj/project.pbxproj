@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9F7C19281DDDBC0900529703 /* SignalProtocolC.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7C19261DDDBC0900529703 /* SignalProtocolC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F7C19D81DDDBC1000529703 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9F7C192F1DDDBC1000529703 /* CMakeLists.txt */; };
 		9F7C19D91DDDBC1000529703 /* curve.c in Sources */ = {isa = PBXBuildFile; fileRef = 9F7C19301DDDBC1000529703 /* curve.c */; };
 		9F7C19DA1DDDBC1000529703 /* curve.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7C19311DDDBC1000529703 /* curve.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F7C19DB1DDDBC1000529703 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9F7C19331DDDBC1000529703 /* CMakeLists.txt */; };
 		9F7C19DC1DDDBC1000529703 /* curve25519-donna.c in Sources */ = {isa = PBXBuildFile; fileRef = 9F7C19341DDDBC1000529703 /* curve25519-donna.c */; };
 		9F7C19DD1DDDBC1000529703 /* curve25519-donna.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7C19351DDDBC1000529703 /* curve25519-donna.h */; };
 		9F7C19DE1DDDBC1000529703 /* compare.c in Sources */ = {isa = PBXBuildFile; fileRef = 9F7C19381DDDBC1000529703 /* compare.c */; };
@@ -132,7 +130,6 @@
 		9F7C1A521DDDBC1000529703 /* key_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7C19B01DDDBC1000529703 /* key_helper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F7C1A531DDDBC1000529703 /* LocalStorageProtocol.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 9F7C19B11DDDBC1000529703 /* LocalStorageProtocol.pb-c.c */; };
 		9F7C1A541DDDBC1000529703 /* LocalStorageProtocol.pb-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7C19B21DDDBC1000529703 /* LocalStorageProtocol.pb-c.h */; };
-		9F7C1A551DDDBC1000529703 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9F7C19B41DDDBC1000529703 /* CMakeLists.txt */; };
 		9F7C1A561DDDBC1000529703 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 9F7C19B51DDDBC1000529703 /* protobuf-c.c */; };
 		9F7C1A571DDDBC1000529703 /* protobuf-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7C19B61DDDBC1000529703 /* protobuf-c.h */; };
 		9F7C1A581DDDBC1000529703 /* protocol.c in Sources */ = {isa = PBXBuildFile; fileRef = 9F7C19B71DDDBC1000529703 /* protocol.c */; };
@@ -433,7 +430,7 @@
 				9F7C19D71DDDBC1000529703 /* WhisperTextProtocol.pb-c.h */,
 			);
 			name = src;
-			path = ../../src;
+			path = ../src;
 			sourceTree = "<group>";
 		};
 		9F7C19321DDDBC1000529703 /* curve25519 */ = {
@@ -740,9 +737,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F7C19DB1DDDBC1000529703 /* CMakeLists.txt in Resources */,
-				9F7C19D81DDDBC1000529703 /* CMakeLists.txt in Resources */,
-				9F7C1A551DDDBC1000529703 /* CMakeLists.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1004,6 +998,7 @@
 				9F7C192D1DDDBC0900529703 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
