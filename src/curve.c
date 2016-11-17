@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <protobuf-c/protobuf-c.h>
+#include "protobuf-c/protobuf-c.h"
 
 #include "curve25519/curve25519-donna.h"
 #include "curve25519/ed25519/additions/curve_sigs.h"

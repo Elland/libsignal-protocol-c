@@ -32,7 +32,7 @@ int fingerprint_generator_create(fingerprint_generator **generator, int iteratio
  * @param local_identity_key The client's identity key.
  * @param remote_stable_identifier The remote party's "stable" identifier.
  * @param remote_identity_key The remote party's identity key.
- * @param fingerprint Set to a freshly allocated unique fingerprint for this conversation
+ * @param fingerprint_val Set to a freshly allocated unique fingerprint for this conversation
  * @return 0 on success, or negative on failure
  */
 int fingerprint_generator_create_for(fingerprint_generator *generator,

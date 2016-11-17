@@ -66,8 +66,8 @@ void *group_cipher_get_user_data(group_cipher *cipher);
  * or write error happening between the time the session state is updated but
  * before they're able to successfully store the plaintext to disk.
  *
+ * @param cipher user data pointer provided to the callback
  * @param callback the callback function to set
- * @param user_data user data pointer provided to the callback
  */
 void group_cipher_set_decryption_callback(group_cipher *cipher,
         int (*callback)(group_cipher *cipher, signal_buffer *plaintext, void *decrypt_context));
@@ -75,8 +75,8 @@ void group_cipher_set_decryption_callback(group_cipher *cipher,
 /**
  * Encrypt a message.
  *
- * @param padded_message The plaintext message bytes, optionally padded to a constant multiple.
- * @param padded_message_len The length of the data pointed to by padded_message
+ * @param padded_plaintext The plaintext message bytes, optionally padded to a constant multiple.
+ * @param padded_plaintext_len The length of the data pointed to by padded_message
  * @param encrypted_message Set to a ciphertext message encrypted to the group+sender+device tuple.
  *
  * @return SG_SUCCESS on success, negative on error
