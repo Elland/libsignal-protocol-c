@@ -825,9 +825,8 @@ int signal_protocol_signed_pre_key_load_key(signal_protocol_store_context *conte
     assert(context);
     assert(context->signed_pre_key_store.load_signed_pre_key);
 
-    result = context->signed_pre_key_store.load_signed_pre_key(
-            &buffer, signed_pre_key_id,
-            context->signed_pre_key_store.user_data);
+    result = context->signed_pre_key_store.load_signed_pre_key(&buffer, signed_pre_key_id, context->signed_pre_key_store.user_data);
+
     if(result < 0) {
         goto complete;
     }

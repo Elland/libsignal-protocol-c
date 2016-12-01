@@ -1,12 +1,4 @@
-//
-//  SignalProtocolC.h
-//  SignalProtocolC
-//
-//  Created by Igor Ranieri on 17/11/2016.
-//  Copyright © 2016 Bakken&Bæck. All rights reserved.
-//
-
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for SignalProtocolC.
 FOUNDATION_EXPORT double SignalProtocolCVersionNumber;
@@ -15,21 +7,18 @@ FOUNDATION_EXPORT double SignalProtocolCVersionNumber;
 FOUNDATION_EXPORT const unsigned char SignalProtocolCVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SignalProtocolC/PublicHeader.h>
-#import <SignalProtocolC/fingerprint.h>
-#import <SignalProtocolC/session_state.h>
-#import <SignalProtocolC/group_cipher.h>
-#import <SignalProtocolC/key_helper.h>
-#import <SignalProtocolC/sender_key.h>
-#import <SignalProtocolC/sender_key_record.h>
-#import <SignalProtocolC/group_session_builder.h>
-#import <SignalProtocolC/sender_key_state.h>
-#import <SignalProtocolC/session_pre_key.h>
-#import <SignalProtocolC/session_cipher.h>
-#import <SignalProtocolC/session_builder.h>
-#import <SignalProtocolC/session_record.h>
-#import <SignalProtocolC/ratchet.h>
-#import <SignalProtocolC/hkdf.h>
-#import <SignalProtocolC/protocol.h>
-#import <SignalProtocolC/curve.h>
-#import <SignalProtocolC/signal_protocol.h>
-#import <SignalProtocolC/signal_protocol_types.h>
+#import <SignalProtocolC/Signal_protocol_c.h>
+#import <SignalProtocolC/SignalCommonCryptoProvider.h>
+#import <SignalProtocolC/SignalContext.h>
+#import <SignalProtocolC/SignalIdentityKeyPair.h>
+#import <SignalProtocolC/SignalKeyPair.h>
+#import <SignalProtocolC/SignalProtocols.h>
+#import <SignalProtocolC/SignalStorage.h>
+#import <SignalProtocolC/SignalKeyHelper.h>
+#import <SignalProtocolC/SignalPreKey.h>
+#import <SignalProtocolC/SignalError.h>
+#import <SignalProtocolC/SignalPrekeyBundle.h>
+#import <SignalProtocolC/SignalSessionBuilder.h>
+#import <SignalProtocolC/SignalCipherText.h>
+#import <SignalProtocolC/SignalSessionCipher.h>
+#import <SignalProtocolC/SignalMessage.h>

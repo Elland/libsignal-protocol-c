@@ -52,12 +52,11 @@ int session_builder_process_pre_key_signal_message(session_builder *builder,
     uint32_t unsigned_pre_key_id_result = 0;
     ec_public_key *their_identity_key = pre_key_signal_message_get_identity_key(message);
 
-    result = signal_protocol_identity_is_trusted_identity(builder->store,
-            builder->remote_address,
-            their_identity_key);
+    result = signal_protocol_identity_is_trusted_identity(builder->store, builder->remote_address, their_identity_key);
     if(result < 0) {
         goto complete;
     }
+    
     if(result == 0) {
         result = SG_ERR_UNTRUSTED_IDENTITY;
         goto complete;
@@ -98,18 +97,14 @@ static int session_builder_process_pre_key_signal_message_v3(session_builder *bu
     session_state *state = 0;
     uint32_t local_registration_id = 0;
 
-    int has_session_state = session_record_has_session_state(record,
-            pre_key_signal_message_get_message_version(message),
-            pre_key_signal_message_get_base_key(message));
+    int has_session_state = session_record_has_session_state(record, pre_key_signal_message_get_message_version(message), pre_key_signal_message_get_base_key(message));
     if(has_session_state) {
         signal_log(builder->global_context, SG_LOG_INFO, "We've already setup a session for this V3 message, letting bundled message fall through...");
         result = 0;
         goto complete;
     }
 
-    result = signal_protocol_signed_pre_key_load_key(builder->store,
-            &our_signed_pre_key,
-            pre_key_signal_message_get_signed_pre_key_id(message));
+    result = signal_protocol_signed_pre_key_load_key(builder->store, &our_signed_pre_key, pre_key_signal_message_get_signed_pre_key_id(message));
     if(result < 0) {
         goto complete;
     }
