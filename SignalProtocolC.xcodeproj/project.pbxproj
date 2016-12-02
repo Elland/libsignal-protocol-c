@@ -43,6 +43,8 @@
 		9F6D1ECD1DF060D00095C471 /* SignalMessage-Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6D1ECA1DF060D00095C471 /* SignalMessage-Internal.h */; };
 		9F6D1ECE1DF060D00095C471 /* SignalMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6D1ECB1DF060D00095C471 /* SignalMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F6D1ECF1DF060D00095C471 /* SignalMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D1ECC1DF060D00095C471 /* SignalMessage.m */; };
+		9F6D209E1DF1A68A0095C471 /* SignalStoreInMemoryStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F9898361DF03B6E006C7793 /* SignalStoreInMemoryStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F6D209F1DF1A68A0095C471 /* SignalStoreInMemoryStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9898371DF03B6E006C7793 /* SignalStoreInMemoryStorage.m */; };
 		9F7C19281DDDBC0900529703 /* signal_protocol_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7C19261DDDBC0900529703 /* signal_protocol_c.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F7C19D91DDDBC1000529703 /* curve.c in Sources */ = {isa = PBXBuildFile; fileRef = 9F7C19301DDDBC1000529703 /* curve.c */; };
 		9F7C19DA1DDDBC1000529703 /* curve.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7C19311DDDBC1000529703 /* curve.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -784,6 +786,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6D209E1DF1A68A0095C471 /* SignalStoreInMemoryStorage.h in Headers */,
 				9F26AC1A1DF02AE400A2594F /* SignalProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -988,6 +991,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F26AC251DF02B4100A2594F /* SignalProtocolUser.swift in Sources */,
+				9F6D209F1DF1A68A0095C471 /* SignalStoreInMemoryStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
