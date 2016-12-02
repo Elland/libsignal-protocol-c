@@ -31,7 +31,6 @@
 		9F6D1EB31DF04FD30095C471 /* SignalPreKeyBundle-Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6D1EB01DF04FD30095C471 /* SignalPreKeyBundle-Internal.h */; };
 		9F6D1EB41DF04FD30095C471 /* SignalPreKeyBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6D1EB11DF04FD30095C471 /* SignalPreKeyBundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F6D1EB51DF04FD30095C471 /* SignalPreKeyBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D1EB21DF04FD30095C471 /* SignalPreKeyBundle.m */; };
-		9F6D1EB71DF050CB0095C471 /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D1EB61DF050CB0095C471 /* Demo.swift */; };
 		9F6D1EBA1DF0520F0095C471 /* SignalSessionBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6D1EB81DF0520F0095C471 /* SignalSessionBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F6D1EBB1DF0520F0095C471 /* SignalSessionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D1EB91DF0520F0095C471 /* SignalSessionBuilder.m */; };
 		9F6D1EBF1DF052370095C471 /* SignalPreKeyMessage+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6D1EBC1DF052370095C471 /* SignalPreKeyMessage+Internal.h */; };
@@ -202,8 +201,6 @@
 		9F7C1A761DDDBC1100529703 /* vpool.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7C19D51DDDBC1000529703 /* vpool.h */; };
 		9F7C1A771DDDBC1100529703 /* WhisperTextProtocol.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 9F7C19D61DDDBC1000529703 /* WhisperTextProtocol.pb-c.c */; };
 		9F7C1A781DDDBC1100529703 /* WhisperTextProtocol.pb-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7C19D71DDDBC1000529703 /* WhisperTextProtocol.pb-c.h */; };
-		9F9898381DF03B6E006C7793 /* SignalStoreInMemoryStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F9898361DF03B6E006C7793 /* SignalStoreInMemoryStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F9898391DF03B6E006C7793 /* SignalStoreInMemoryStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9898371DF03B6E006C7793 /* SignalStoreInMemoryStorage.m */; };
 		9F98983E1DF03CD1006C7793 /* SignalKeyHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F98983B1DF03CD1006C7793 /* SignalKeyHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F98983F1DF03CD1006C7793 /* SignalKeyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F98983C1DF03CD1006C7793 /* SignalKeyHelper.m */; };
 		9F9898421DF03D3A006C7793 /* SignalPreKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F9898401DF03D3A006C7793 /* SignalPreKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -787,7 +784,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F9898381DF03B6E006C7793 /* SignalStoreInMemoryStorage.h in Headers */,
 				9F26AC1A1DF02AE400A2594F /* SignalProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -992,8 +988,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F26AC251DF02B4100A2594F /* SignalProtocolUser.swift in Sources */,
-				9F9898391DF03B6E006C7793 /* SignalStoreInMemoryStorage.m in Sources */,
-				9F6D1EB71DF050CB0095C471 /* Demo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
