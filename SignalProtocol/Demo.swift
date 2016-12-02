@@ -1,8 +1,8 @@
 import Foundation
 import SignalProtocolC
 
-public class Demo {
-    public init() {
+class Demo {
+    init() {
         let aliceSignal = Signal()
         let bobSignal = Signal()
 
