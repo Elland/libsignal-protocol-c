@@ -1,4 +1,5 @@
 #import "SignalStoreInMemoryStorage.h"
+#import "SignalProtocolC.h"
 
 @interface SignalStoreInMemoryStorage ()
 @property (nonatomic, strong, readonly) NSMutableDictionary<NSString *,NSMutableDictionary *> *sessionStore;

@@ -1,7 +1,9 @@
 #import <Foundation/Foundation.h>
-#import "SignalProtocolC.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
+@protocol SignalStore;
+@class SignalIdentityKeyPair;
 
 @interface SignalStoreInMemoryStorage : NSObject <SignalStore>
 

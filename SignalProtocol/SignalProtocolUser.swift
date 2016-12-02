@@ -29,13 +29,17 @@ public class SignalProtocolUser {
 
     public var signedPreKey: SignalSignedPreKey
 
+    public var localRegistrationID: UInt32
+
+    public var identityKeyPair: SignalIdentityKeyPair
+
     public init(username: String, signal: Signal, deviceID: UInt32) {
         self.signal = signal
 
         self.address = SignalAddress(name: username, deviceID: Int32(deviceID))
 
-        let identityKeyPair = self.signal.keyHelper.generateIdentityKeyPair()
-        let localRegistrationID = self.signal.keyHelper.generateRegistrationID()
+        self.identityKeyPair = self.signal.keyHelper.generateIdentityKeyPair()
+        self.localRegistrationID = self.signal.keyHelper.generateRegistrationID()
 
         self.signal.store.identityKeyPair = identityKeyPair
         self.signal.store.localRegistrationID = localRegistrationID
