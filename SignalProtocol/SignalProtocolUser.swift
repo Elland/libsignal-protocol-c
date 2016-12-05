@@ -10,7 +10,7 @@ public class Signal {
 
     public var keyHelper: SignalKeyHelper
 
-    init() {
+    public init() {
         self.store = SignalStoreInMemoryStorage()
         self.storage = SignalStorage(signalStore: self.store)
         self.context = SignalContext(storage: self.storage)
