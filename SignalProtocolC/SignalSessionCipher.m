@@ -33,7 +33,6 @@
     int result = session_cipher_encrypt(_cipher, data.bytes, data.length, &message);
     if (result < 0 || !message) {
         *error = ErrorFromSignalError(SignalErrorFromCode(result));
-        raise(-1);
     }
 
     signal_buffer *serialized = ciphertext_message_get_serialized(message);
