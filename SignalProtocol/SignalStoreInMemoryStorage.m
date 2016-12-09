@@ -33,7 +33,7 @@
  * provided recipient ID + device ID tuple.
  * or nil if not found.
  */
-- (nullable NSData*) sessionRecordForAddress:(SignalAddress*)address {
+- (nullable NSData *)sessionRecordForAddress:(SignalAddress *)address {
     return [[self deviceSessionRecordsForAddressName:address.name] objectForKey:@(address.deviceID)];
 }
 
@@ -43,7 +43,7 @@
  *
  * Return YES on success, NO on failure.
  */
-- (BOOL) storeSessionRecord:(NSData*)recordData forAddress:(SignalAddress*)address {
+- (BOOL)storeSessionRecord:(NSData*)recordData forAddress:(SignalAddress*)address {
     NSMutableDictionary *dict = @{@(address.deviceID):recordData}.mutableCopy;
     [self.sessionStore setObject:dict forKey:address.name];
     return YES;
@@ -53,8 +53,8 @@
  * Determine whether there is a committed session record for a
  * recipient ID + device ID tuple.
  */
-- (BOOL) sessionRecordExistsForAddress:(SignalAddress*)address {
-    if ([self sessionRecordExistsForAddress:address]) {
+- (BOOL)sessionRecordExistsForAddress:(SignalAddress*)address {
+    if ([self sessionRecordForAddress:address] != nil) {
         return YES;
     }
     return NO;

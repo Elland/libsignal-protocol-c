@@ -4,10 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SignalProtocol.xcscheme_^#shared#^_</key>
+		<key>Demo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
+		</dict>
+		<key>SignalProtocol.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 		<key>SignalProtocolC.xcscheme_^#shared#^_</key>
 		<dict>
@@ -17,6 +22,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>9F1C12261DFAD1C500A3F848</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9F26AC151DF02AE400A2594F</key>
 		<dict>
 			<key>primary</key>

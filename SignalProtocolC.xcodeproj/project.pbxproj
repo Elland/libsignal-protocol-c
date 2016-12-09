@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F1C122A1DFAD1C500A3F848 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C12291DFAD1C500A3F848 /* AppDelegate.swift */; };
+		9F1C122C1DFAD1C500A3F848 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C122B1DFAD1C500A3F848 /* ViewController.swift */; };
+		9F1C122F1DFAD1C500A3F848 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1C122D1DFAD1C500A3F848 /* Main.storyboard */; };
+		9F1C12311DFAD1C500A3F848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F1C12301DFAD1C500A3F848 /* Assets.xcassets */; };
+		9F1C12341DFAD1C500A3F848 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1C12321DFAD1C500A3F848 /* LaunchScreen.storyboard */; };
+		9F1C12391DFAD1F700A3F848 /* SignalProtocolC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7C19231DDDBC0900529703 /* SignalProtocolC.framework */; };
+		9F1C123A1DFAD1F900A3F848 /* SignalProtocol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F26AC161DF02AE400A2594F /* SignalProtocol.framework */; };
+		9F1C123C1DFAD20600A3F848 /* SignalProtocolC.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7C19231DDDBC0900529703 /* SignalProtocolC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F1C123D1DFAD20600A3F848 /* SignalProtocol.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9F26AC161DF02AE400A2594F /* SignalProtocol.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F1C1EED1DF0119500A0631C /* SignalCommonCryptoProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F1C1EEB1DF0119500A0631C /* SignalCommonCryptoProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F1C1EEE1DF0119500A0631C /* SignalCommonCryptoProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C1EEC1DF0119500A0631C /* SignalCommonCryptoProvider.m */; };
 		9F1C1EF11DF01BC900A0631C /* SignalContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F1C1EEF1DF01BC900A0631C /* SignalContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -212,7 +221,29 @@
 		9F9898491DF03EB1006C7793 /* SignalSignedPreKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9898461DF03EB1006C7793 /* SignalSignedPreKey.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9F1C123B1DFAD1FC00A3F848 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9F1C123C1DFAD20600A3F848 /* SignalProtocolC.framework in Copy Frameworks */,
+				9F1C123D1DFAD20600A3F848 /* SignalProtocol.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9F1C12271DFAD1C500A3F848 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F1C12291DFAD1C500A3F848 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F1C122B1DFAD1C500A3F848 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F1C122E1DFAD1C500A3F848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F1C12301DFAD1C500A3F848 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F1C12331DFAD1C500A3F848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F1C12351DFAD1C500A3F848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F1C1EEB1DF0119500A0631C /* SignalCommonCryptoProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalCommonCryptoProvider.h; sourceTree = "<group>"; };
 		9F1C1EEC1DF0119500A0631C /* SignalCommonCryptoProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalCommonCryptoProvider.m; sourceTree = "<group>"; };
 		9F1C1EEF1DF01BC900A0631C /* SignalContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignalContext.h; path = ../src/SignalContext.h; sourceTree = "<group>"; };
@@ -239,7 +270,6 @@
 		9F6D1EB01DF04FD30095C471 /* SignalPreKeyBundle-Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignalPreKeyBundle-Internal.h"; sourceTree = "<group>"; };
 		9F6D1EB11DF04FD30095C471 /* SignalPreKeyBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalPreKeyBundle.h; sourceTree = "<group>"; };
 		9F6D1EB21DF04FD30095C471 /* SignalPreKeyBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalPreKeyBundle.m; sourceTree = "<group>"; };
-		9F6D1EB61DF050CB0095C471 /* Demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
 		9F6D1EB81DF0520F0095C471 /* SignalSessionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalSessionBuilder.h; sourceTree = "<group>"; };
 		9F6D1EB91DF0520F0095C471 /* SignalSessionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalSessionBuilder.m; sourceTree = "<group>"; };
 		9F6D1EBC1DF052370095C471 /* SignalPreKeyMessage+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignalPreKeyMessage+Internal.h"; sourceTree = "<group>"; };
@@ -425,6 +455,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9F1C12241DFAD1C500A3F848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F1C12391DFAD1F700A3F848 /* SignalProtocolC.framework in Frameworks */,
+				9F1C123A1DFAD1F900A3F848 /* SignalProtocol.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9F26AC121DF02AE400A2594F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -443,6 +482,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F1C12281DFAD1C500A3F848 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				9F1C12291DFAD1C500A3F848 /* AppDelegate.swift */,
+				9F1C122B1DFAD1C500A3F848 /* ViewController.swift */,
+				9F1C122D1DFAD1C500A3F848 /* Main.storyboard */,
+				9F1C12301DFAD1C500A3F848 /* Assets.xcassets */,
+				9F1C12321DFAD1C500A3F848 /* LaunchScreen.storyboard */,
+				9F1C12351DFAD1C500A3F848 /* Info.plist */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 		9F1C1EF31DF01C7300A0631C /* Objective C Wrapper */ = {
 			isa = PBXGroup;
 			children = (
@@ -514,7 +566,6 @@
 				9F26AC181DF02AE400A2594F /* SignalProtocol.h */,
 				9F26AC191DF02AE400A2594F /* Info.plist */,
 				9F26AC241DF02B4100A2594F /* SignalProtocolUser.swift */,
-				9F6D1EB61DF050CB0095C471 /* Demo.swift */,
 			);
 			path = SignalProtocol;
 			sourceTree = "<group>";
@@ -524,6 +575,7 @@
 			children = (
 				9F7C19251DDDBC0900529703 /* SignalProtocolC */,
 				9F26AC171DF02AE400A2594F /* SignalProtocol */,
+				9F1C12281DFAD1C500A3F848 /* Demo */,
 				9F7C19241DDDBC0900529703 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -533,6 +585,7 @@
 			children = (
 				9F7C19231DDDBC0900529703 /* SignalProtocolC.framework */,
 				9F26AC161DF02AE400A2594F /* SignalProtocol.framework */,
+				9F1C12271DFAD1C500A3F848 /* Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -889,6 +942,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		9F1C12261DFAD1C500A3F848 /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F1C12381DFAD1C500A3F848 /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				9F1C12231DFAD1C500A3F848 /* Sources */,
+				9F1C12241DFAD1C500A3F848 /* Frameworks */,
+				9F1C12251DFAD1C500A3F848 /* Resources */,
+				9F1C123B1DFAD1FC00A3F848 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = 9F1C12271DFAD1C500A3F848 /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		9F26AC151DF02AE400A2594F /* SignalProtocol */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F26AC1F1DF02AE400A2594F /* Build configuration list for PBXNativeTarget "SignalProtocol" */;
@@ -935,6 +1006,11 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Bakken&Bæck";
 				TargetAttributes = {
+					9F1C12261DFAD1C500A3F848 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 29X3GG489T;
+						ProvisioningStyle = Automatic;
+					};
 					9F26AC151DF02AE400A2594F = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 29X3GG489T;
@@ -964,11 +1040,22 @@
 			targets = (
 				9F7C19221DDDBC0900529703 /* SignalProtocolC */,
 				9F26AC151DF02AE400A2594F /* SignalProtocol */,
+				9F1C12261DFAD1C500A3F848 /* Demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9F1C12251DFAD1C500A3F848 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F1C12341DFAD1C500A3F848 /* LaunchScreen.storyboard in Resources */,
+				9F1C12311DFAD1C500A3F848 /* Assets.xcassets in Resources */,
+				9F1C122F1DFAD1C500A3F848 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9F26AC141DF02AE400A2594F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -986,6 +1073,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9F1C12231DFAD1C500A3F848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F1C122C1DFAD1C500A3F848 /* ViewController.swift in Sources */,
+				9F1C122A1DFAD1C500A3F848 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9F26AC111DF02AE400A2594F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1114,7 +1210,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		9F1C122D1DFAD1C500A3F848 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F1C122E1DFAD1C500A3F848 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9F1C12321DFAD1C500A3F848 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F1C12331DFAD1C500A3F848 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		9F1C12361DFAD1C500A3F848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 29X3GG489T;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9F1C12371DFAD1C500A3F848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 29X3GG489T;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		9F26AC201DF02AE400A2594F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1302,6 +1446,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9F1C12381DFAD1C500A3F848 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F1C12361DFAD1C500A3F848 /* Debug */,
+				9F1C12371DFAD1C500A3F848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		9F26AC1F1DF02AE400A2594F /* Build configuration list for PBXNativeTarget "SignalProtocol" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
