@@ -2,7 +2,7 @@
 
 @implementation SignalAddress
 
-- (instancetype)initWithName:(NSString *)name deviceID:(int32_t)deviceID {
+- (instancetype)initWithName:(NSString *)name deviceID:(uint32_t)deviceID {
     if (self = [super init]) {
         _name = [name copy];
         _deviceID = deviceID;

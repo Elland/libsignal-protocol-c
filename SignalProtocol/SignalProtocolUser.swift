@@ -36,7 +36,7 @@ public class SignalProtocolUser {
     public init(username: String, signal: Signal, deviceID: UInt32) {
         self.signal = signal
 
-        self.address = SignalAddress(name: username, deviceID: Int32(deviceID))
+        self.address = SignalAddress(name: username, deviceID: deviceID)
 
         self.identityKeyPair = self.signal.keyHelper.generateIdentityKeyPair()
         self.localRegistrationID = self.signal.keyHelper.generateRegistrationID()
@@ -50,6 +50,6 @@ public class SignalProtocolUser {
     }
 
     public func preKeyBundle(for preKey: SignalPreKey) -> SignalPreKeyBundle {
-        return SignalPreKeyBundle(registrationID: self.signal.store.localRegistrationID, deviceID: UInt32(self.address.deviceID), preKeyID: preKey.preKeyId(), preKeyPublic: preKey.keyPair().publicKey, signedPreKeyID: self.signedPreKey.preKeyID(), signedPreKeyPublic: self.signedPreKey.keyPair().publicKey, signature: self.signedPreKey.signature(), identityKey: self.signal.store.identityKeyPair!.publicKey)
+        return SignalPreKeyBundle(registrationID: self.signal.store.localRegistrationID, deviceID: self.address.deviceID, preKeyID: preKey.preKeyId(), preKeyPublic: preKey.keyPair().publicKey, signedPreKeyID: self.signedPreKey.preKeyID(), signedPreKeyPublic: self.signedPreKey.keyPair().publicKey, signature: self.signedPreKey.signature(), identityKey: self.signal.store.identityKeyPair!.publicKey)
     }
 }
