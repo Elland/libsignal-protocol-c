@@ -9,33 +9,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let aliceSignal = Signal()
-        let bobSignal = Signal()
+        let sender = SignalAddress(name: "bob", deviceID: 12351)
+        let recipient = SignalAddress(name: "alice", deviceID: 12355)
 
-        let bob = SignalProtocolUser(username: "Bob", signal: bobSignal, deviceID: 12351)
-        let alice = SignalProtocolUser(username: "Alice", signal: aliceSignal, deviceID: 12355)
+        let recipientStore = SignalStoreInMemoryStorage()
+        let recipientStorage = SignalStorage(signalStore: recipientStore)
+        let recipientContext = SignalContext(storage: recipientStorage)
+        let recipientKeyHelper = SignalKeyHelper(context: recipientContext)
 
-        let bobSessionBuilder = SignalSessionBuilder(address: alice.address, context: bobSignal.context)
+        let recipientIdentityKeyPair = recipientKeyHelper.generateIdentityKeyPair()
+        let recipientLocalRegistrationId = recipientKeyHelper.generateRegistrationID()
 
-        let preKey = alice.preKeys.first!
-        aliceSignal.store.storePreKey(preKey.serializedData(), preKeyID: preKey.preKeyId())
-        aliceSignal.store.storeSignedPreKey(alice.signedPreKey.serializedData(), signedPreKeyID: alice.signedPreKey.preKeyID())
-        let alicePreKeyBundle = alice.preKeyBundle(for: preKey)
+        recipientStore.identityKeyPair = recipientIdentityKeyPair
+        recipientStore.localRegistrationID = recipientLocalRegistrationId
 
-        bobSessionBuilder.processPreKeyBundle(alicePreKeyBundle)
+        let recipientPreKeys = recipientKeyHelper.generatePreKeys(withStartingPreKeyID: 0, count: 100)
+        // let recipientLastResortPreKey = recipientKeyHelper.generateLastResortPreKey()
+        let recipientSignedPreKey = recipientKeyHelper.generateSignedPreKey(withIdentity: recipientIdentityKeyPair, signedPreKeyID: 0)
 
-        let bobSessionCipher = SignalSessionCipher(address: alice.address, context: bobSignal.context)
+        let recipientPreKeyFirst = recipientPreKeys.first!
+        recipientStore.storePreKey(recipientPreKeyFirst.serializedData(), preKeyID: recipientPreKeyFirst.preKeyId())
+        recipientStore.storeSignedPreKey(recipientSignedPreKey.serializedData(), signedPreKeyID: recipientSignedPreKey.preKeyID())
 
-        let bobMessage = "Hey I'm Bob!"
-        let messageData = bobMessage.data(using: .utf8)!
-        let bobCipheredText = bobSessionCipher.encryptData(messageData, error: nil)
+        let recipientPreKeyBundle = SignalPreKeyBundle(registrationID: recipientLocalRegistrationId, deviceID: UInt32(recipient.deviceID), preKeyID: recipientPreKeyFirst.preKeyId(), preKeyPublic: recipientPreKeyFirst.keyPair().publicKey, signedPreKeyID: recipientSignedPreKey.preKeyID(), signedPreKeyPublic: recipientSignedPreKey.keyPair().publicKey, signature: recipientSignedPreKey.signature(), identityKey: recipientIdentityKeyPair.publicKey)
 
-        let aliceSessionCipher = SignalSessionCipher(address: bob.address, context: aliceSignal.context)
-        let retrievedBobCipher = SignalCipherText(data: bobCipheredText.data, type: .message)
-        let decryptedMessage = aliceSessionCipher.decryptCipherText(retrievedBobCipher, error: nil)
+        let senderStore = SignalStoreInMemoryStorage()
+        let senderStorage = SignalStorage(signalStore: senderStore)
+        let senderContext = SignalContext(storage: senderStorage)
+        let senderKeyHelper = SignalKeyHelper(context: senderContext)
+
+        let senderIdentityKeyPair = senderKeyHelper.generateIdentityKeyPair()
+        let senderLocalRegistrationId = senderKeyHelper.generateRegistrationID()
+
+        senderStore.identityKeyPair = senderIdentityKeyPair
+        senderStore.localRegistrationID = senderLocalRegistrationId
+
+        let senderSessionBuilder = SignalSessionBuilder(address: recipient, context: senderContext)
+        senderSessionBuilder.processPreKeyBundle(recipientPreKeyBundle)
+        let senderSessionCipher = SignalSessionCipher(address: recipient, context: senderContext)
+
+        let senderMessage = "Hey I'm Bob!"
+        let messageData = senderMessage.data(using: .utf8)!
+        let senderCipheredText = senderSessionCipher.encryptData(messageData, error: nil)
+
+        let recipientSessionCipher = SignalSessionCipher(address: sender, context: recipientContext)
+        let decryptedMessage = recipientSessionCipher.decryptCipherText(senderCipheredText, error: nil)
         let decryptedString = String(data: decryptedMessage, encoding: .utf8)!
 
-        print("Bob sent: \(bobMessage)")
+        print("Bob sent: \(senderMessage)")
         print("Alice received: \(decryptedString)")
 
         
