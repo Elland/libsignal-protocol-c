@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         recipientStore.storePreKey(recipientPreKeyFirst.serializedData(), preKeyID: recipientPreKeyFirst.preKeyId())
         recipientStore.storeSignedPreKey(recipientSignedPreKey.serializedData(), signedPreKeyID: recipientSignedPreKey.preKeyID())
 
-        let recipientPreKeyBundle = SignalPreKeyBundle(registrationID: recipientLocalRegistrationId, deviceID: UInt32(recipient.deviceID), preKeyID: recipientPreKeyFirst.preKeyId(), preKeyPublic: recipientPreKeyFirst.keyPair().publicKey, signedPreKeyID: recipientSignedPreKey.preKeyID(), signedPreKeyPublic: recipientSignedPreKey.keyPair().publicKey, signature: recipientSignedPreKey.signature(), identityKey: recipientIdentityKeyPair.publicKey)
+        let recipientPreKeyBundle = SignalPreKeyBundle(registrationID: recipientLocalRegistrationId, deviceID: recipient.deviceID, preKeyID: recipientPreKeyFirst.preKeyId(), preKeyPublic: recipientPreKeyFirst.keyPair().publicKey, signedPreKeyID: recipientSignedPreKey.preKeyID(), signedPreKeyPublic: recipientSignedPreKey.keyPair().publicKey, signature: recipientSignedPreKey.signature(), identityKey: recipientIdentityKeyPair.publicKey)
 
         let senderStore = SignalStoreInMemoryStorage()
         let senderStorage = SignalStorage(signalStore: senderStore)

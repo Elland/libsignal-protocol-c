@@ -1,6 +1,41 @@
 #import "SignalKeyPair.h"
 #import "SignalKeyPair+Internal.h"
 
+@interface ECPublicKey()
+@property (nonnull, nonatomic) ec_public_key *public_key;
+@end
+
+
+@implementation ECPublicKey
+
+- (instancetype)initWithData:(NSData *)data {
+    self = [super init];
+
+
+    ec_public_key *public = NULL;
+    int result = curve_decode_point(&public, data.bytes, data.length, NULL);
+    NSAssert(result >= 0, @"Unable to decode public key.");
+    self.public_key = public;
+
+    return self;
+}
+
+- (NSData *)publicKeyData {
+    NSData *publicKeyData = NULL;
+
+    signal_buffer *buffer = NULL;
+
+    int result = ec_public_key_serialize(&buffer, self.public_key);
+    if (result == 0 && buffer) {
+        publicKeyData = [NSData dataWithBytes:signal_buffer_data(buffer) length:signal_buffer_len(buffer)];
+    }
+    signal_buffer_free(buffer);
+
+    return publicKeyData;
+}
+
+@end
+
 @implementation SignalKeyPair
 @synthesize publicKey = _publicKey;
 @synthesize privateKey = _privateKey;

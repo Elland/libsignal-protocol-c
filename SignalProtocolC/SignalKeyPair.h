@@ -1,6 +1,13 @@
 @import Foundation;
 
+
 NS_ASSUME_NONNULL_BEGIN
+
+@interface ECPublicKey: NSObject
+- (NSData *)publicKeyData;
+
+- (instancetype)initWithData:(NSData *)data;
+@end
 
 @interface SignalKeyPair : NSObject <NSSecureCoding>
 
