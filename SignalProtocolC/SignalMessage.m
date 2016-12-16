@@ -16,8 +16,6 @@
             if (error) {
                 *error = ErrorFromSignalError(SignalErrorFromCode(result));
             }
-
-            raise(-1);
         }
     }
 

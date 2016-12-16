@@ -87,7 +87,8 @@
     int result = SG_ERR_UNKNOWN;
     if (message) {
         result = session_cipher_decrypt_signal_message(_cipher, message.signal_message, NULL, &buffer);
-    } else if (preKeyMessage) {
+    }
+    if (preKeyMessage && result != 0) {
         result = session_cipher_decrypt_pre_key_signal_message(_cipher, preKeyMessage.pre_key_signal_message, NULL, &buffer);
     }
 

@@ -13,47 +13,8 @@
 		9F1C12311DFAD1C500A3F848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F1C12301DFAD1C500A3F848 /* Assets.xcassets */; };
 		9F1C12341DFAD1C500A3F848 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1C12321DFAD1C500A3F848 /* LaunchScreen.storyboard */; };
 		9F1C12391DFAD1F700A3F848 /* SignalProtocolC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7C19231DDDBC0900529703 /* SignalProtocolC.framework */; };
-		9F1C123A1DFAD1F900A3F848 /* SignalProtocol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F26AC161DF02AE400A2594F /* SignalProtocol.framework */; };
 		9F1C123C1DFAD20600A3F848 /* SignalProtocolC.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7C19231DDDBC0900529703 /* SignalProtocolC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F1C123D1DFAD20600A3F848 /* SignalProtocol.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9F26AC161DF02AE400A2594F /* SignalProtocol.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F1C1EED1DF0119500A0631C /* SignalCommonCryptoProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F1C1EEB1DF0119500A0631C /* SignalCommonCryptoProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F1C1EEE1DF0119500A0631C /* SignalCommonCryptoProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C1EEC1DF0119500A0631C /* SignalCommonCryptoProvider.m */; };
-		9F1C1EF11DF01BC900A0631C /* SignalContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F1C1EEF1DF01BC900A0631C /* SignalContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F1C1EF21DF01BC900A0631C /* SignalContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C1EF01DF01BC900A0631C /* SignalContext.m */; };
-		9F1C1EF61DF01D7600A0631C /* SignalStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F1C1EF41DF01D7600A0631C /* SignalStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F1C1EF71DF01D7600A0631C /* SignalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C1EF51DF01D7600A0631C /* SignalStorage.m */; };
-		9F1C1EFB1DF01EC600A0631C /* SignalAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F1C1EF91DF01EC600A0631C /* SignalAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F1C1EFC1DF01EC600A0631C /* SignalAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C1EFA1DF01EC600A0631C /* SignalAddress.m */; };
-		9F1C1F001DF01FB200A0631C /* SignalProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F1C1EFE1DF01FB200A0631C /* SignalProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F1C1F041DF020FC00A0631C /* SignalIdentityKeyPair.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F1C1F021DF020FC00A0631C /* SignalIdentityKeyPair.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F1C1F051DF020FC00A0631C /* SignalIdentityKeyPair.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C1F031DF020FC00A0631C /* SignalIdentityKeyPair.m */; };
-		9F1C1F0A1DF021FC00A0631C /* SignalKeyPair.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F1C1F071DF021FC00A0631C /* SignalKeyPair.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F1C1F0B1DF021FC00A0631C /* SignalKeyPair.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C1F081DF021FC00A0631C /* SignalKeyPair.m */; };
-		9F26AC1A1DF02AE400A2594F /* SignalProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F26AC181DF02AE400A2594F /* SignalProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F26AC231DF02AFA00A2594F /* SignalProtocolC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7C19231DDDBC0900529703 /* SignalProtocolC.framework */; };
-		9F26AC251DF02B4100A2594F /* SignalProtocolUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F26AC241DF02B4100A2594F /* SignalProtocolUser.swift */; };
 		9F26AC2B1DF0312100A2594F /* SignalProtocolC.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F26AC2A1DF0310100A2594F /* SignalProtocolC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F6D1EA81DF046850095C471 /* SignalError.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6D1EA61DF046850095C471 /* SignalError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F6D1EA91DF046850095C471 /* SignalError.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D1EA71DF046850095C471 /* SignalError.m */; };
-		9F6D1EAB1DF047220095C471 /* SignalIdentityKeyPair-Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6D1EAA1DF047130095C471 /* SignalIdentityKeyPair-Internal.h */; };
-		9F6D1EAF1DF047B70095C471 /* SignalPreKey-Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6D1EAE1DF047B70095C471 /* SignalPreKey-Internal.h */; };
-		9F6D1EB31DF04FD30095C471 /* SignalPreKeyBundle-Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6D1EB01DF04FD30095C471 /* SignalPreKeyBundle-Internal.h */; };
-		9F6D1EB41DF04FD30095C471 /* SignalPreKeyBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6D1EB11DF04FD30095C471 /* SignalPreKeyBundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F6D1EB51DF04FD30095C471 /* SignalPreKeyBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D1EB21DF04FD30095C471 /* SignalPreKeyBundle.m */; };
-		9F6D1EBA1DF0520F0095C471 /* SignalSessionBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6D1EB81DF0520F0095C471 /* SignalSessionBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F6D1EBB1DF0520F0095C471 /* SignalSessionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D1EB91DF0520F0095C471 /* SignalSessionBuilder.m */; };
-		9F6D1EBF1DF052370095C471 /* SignalPreKeyMessage+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6D1EBC1DF052370095C471 /* SignalPreKeyMessage+Internal.h */; };
-		9F6D1EC01DF052370095C471 /* SignalPreKeyMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6D1EBD1DF052370095C471 /* SignalPreKeyMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F6D1EC11DF052370095C471 /* SignalPreKeyMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D1EBE1DF052370095C471 /* SignalPreKeyMessage.m */; };
-		9F6D1EC41DF05FA40095C471 /* SignalSessionCipher.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6D1EC21DF05FA40095C471 /* SignalSessionCipher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F6D1EC51DF05FA40095C471 /* SignalSessionCipher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D1EC31DF05FA40095C471 /* SignalSessionCipher.m */; };
-		9F6D1EC81DF05FD50095C471 /* SignalCipherText.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6D1EC61DF05FD50095C471 /* SignalCipherText.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F6D1EC91DF05FD50095C471 /* SignalCiphertext.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D1EC71DF05FD50095C471 /* SignalCiphertext.m */; };
-		9F6D1ECD1DF060D00095C471 /* SignalMessage-Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6D1ECA1DF060D00095C471 /* SignalMessage-Internal.h */; };
-		9F6D1ECE1DF060D00095C471 /* SignalMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6D1ECB1DF060D00095C471 /* SignalMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F6D1ECF1DF060D00095C471 /* SignalMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D1ECC1DF060D00095C471 /* SignalMessage.m */; };
-		9F6D209E1DF1A68A0095C471 /* SignalStoreInMemoryStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F9898361DF03B6E006C7793 /* SignalStoreInMemoryStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F6D209F1DF1A68A0095C471 /* SignalStoreInMemoryStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9898371DF03B6E006C7793 /* SignalStoreInMemoryStorage.m */; };
 		9F7C19281DDDBC0900529703 /* signal_protocol_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7C19261DDDBC0900529703 /* signal_protocol_c.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F7C19D91DDDBC1000529703 /* curve.c in Sources */ = {isa = PBXBuildFile; fileRef = 9F7C19301DDDBC1000529703 /* curve.c */; };
 		9F7C19DA1DDDBC1000529703 /* curve.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7C19311DDDBC1000529703 /* curve.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -212,13 +173,6 @@
 		9F7C1A761DDDBC1100529703 /* vpool.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7C19D51DDDBC1000529703 /* vpool.h */; };
 		9F7C1A771DDDBC1100529703 /* WhisperTextProtocol.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 9F7C19D61DDDBC1000529703 /* WhisperTextProtocol.pb-c.c */; };
 		9F7C1A781DDDBC1100529703 /* WhisperTextProtocol.pb-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7C19D71DDDBC1000529703 /* WhisperTextProtocol.pb-c.h */; };
-		9F98983E1DF03CD1006C7793 /* SignalKeyHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F98983B1DF03CD1006C7793 /* SignalKeyHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F98983F1DF03CD1006C7793 /* SignalKeyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F98983C1DF03CD1006C7793 /* SignalKeyHelper.m */; };
-		9F9898421DF03D3A006C7793 /* SignalPreKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F9898401DF03D3A006C7793 /* SignalPreKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F9898431DF03D3A006C7793 /* SignalPreKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9898411DF03D3A006C7793 /* SignalPreKey.m */; };
-		9F9898471DF03EB1006C7793 /* SignalSignedPreKey-Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F9898441DF03EB1006C7793 /* SignalSignedPreKey-Internal.h */; };
-		9F9898481DF03EB1006C7793 /* SignalSignedPreKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F9898451DF03EB1006C7793 /* SignalSignedPreKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F9898491DF03EB1006C7793 /* SignalSignedPreKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9898461DF03EB1006C7793 /* SignalSignedPreKey.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -229,7 +183,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				9F1C123C1DFAD20600A3F848 /* SignalProtocolC.framework in Copy Frameworks */,
-				9F1C123D1DFAD20600A3F848 /* SignalProtocol.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,44 +197,7 @@
 		9F1C12301DFAD1C500A3F848 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F1C12331DFAD1C500A3F848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F1C12351DFAD1C500A3F848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F1C1EEB1DF0119500A0631C /* SignalCommonCryptoProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalCommonCryptoProvider.h; sourceTree = "<group>"; };
-		9F1C1EEC1DF0119500A0631C /* SignalCommonCryptoProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalCommonCryptoProvider.m; sourceTree = "<group>"; };
-		9F1C1EEF1DF01BC900A0631C /* SignalContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignalContext.h; path = ../src/SignalContext.h; sourceTree = "<group>"; };
-		9F1C1EF01DF01BC900A0631C /* SignalContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignalContext.m; path = ../src/SignalContext.m; sourceTree = "<group>"; };
-		9F1C1EF41DF01D7600A0631C /* SignalStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalStorage.h; sourceTree = "<group>"; };
-		9F1C1EF51DF01D7600A0631C /* SignalStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalStorage.m; sourceTree = "<group>"; };
-		9F1C1EF91DF01EC600A0631C /* SignalAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalAddress.h; sourceTree = "<group>"; };
-		9F1C1EFA1DF01EC600A0631C /* SignalAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalAddress.m; sourceTree = "<group>"; };
-		9F1C1EFE1DF01FB200A0631C /* SignalProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalProtocols.h; sourceTree = "<group>"; };
-		9F1C1F021DF020FC00A0631C /* SignalIdentityKeyPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalIdentityKeyPair.h; sourceTree = "<group>"; };
-		9F1C1F031DF020FC00A0631C /* SignalIdentityKeyPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalIdentityKeyPair.m; sourceTree = "<group>"; };
-		9F1C1F071DF021FC00A0631C /* SignalKeyPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalKeyPair.h; sourceTree = "<group>"; };
-		9F1C1F081DF021FC00A0631C /* SignalKeyPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalKeyPair.m; sourceTree = "<group>"; };
-		9F1C1F0C1DF0240C00A0631C /* SignalKeyPair+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SignalKeyPair+Internal.h"; sourceTree = "<group>"; };
-		9F26AC161DF02AE400A2594F /* SignalProtocol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SignalProtocol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F26AC181DF02AE400A2594F /* SignalProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignalProtocol.h; sourceTree = "<group>"; };
-		9F26AC191DF02AE400A2594F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F26AC241DF02B4100A2594F /* SignalProtocolUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalProtocolUser.swift; sourceTree = "<group>"; };
 		9F26AC2A1DF0310100A2594F /* SignalProtocolC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignalProtocolC.h; sourceTree = "<group>"; };
-		9F6D1EA61DF046850095C471 /* SignalError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalError.h; sourceTree = "<group>"; };
-		9F6D1EA71DF046850095C471 /* SignalError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalError.m; sourceTree = "<group>"; };
-		9F6D1EAA1DF047130095C471 /* SignalIdentityKeyPair-Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SignalIdentityKeyPair-Internal.h"; sourceTree = "<group>"; };
-		9F6D1EAE1DF047B70095C471 /* SignalPreKey-Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignalPreKey-Internal.h"; sourceTree = "<group>"; };
-		9F6D1EB01DF04FD30095C471 /* SignalPreKeyBundle-Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignalPreKeyBundle-Internal.h"; sourceTree = "<group>"; };
-		9F6D1EB11DF04FD30095C471 /* SignalPreKeyBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalPreKeyBundle.h; sourceTree = "<group>"; };
-		9F6D1EB21DF04FD30095C471 /* SignalPreKeyBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalPreKeyBundle.m; sourceTree = "<group>"; };
-		9F6D1EB81DF0520F0095C471 /* SignalSessionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalSessionBuilder.h; sourceTree = "<group>"; };
-		9F6D1EB91DF0520F0095C471 /* SignalSessionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalSessionBuilder.m; sourceTree = "<group>"; };
-		9F6D1EBC1DF052370095C471 /* SignalPreKeyMessage+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignalPreKeyMessage+Internal.h"; sourceTree = "<group>"; };
-		9F6D1EBD1DF052370095C471 /* SignalPreKeyMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalPreKeyMessage.h; sourceTree = "<group>"; };
-		9F6D1EBE1DF052370095C471 /* SignalPreKeyMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalPreKeyMessage.m; sourceTree = "<group>"; };
-		9F6D1EC21DF05FA40095C471 /* SignalSessionCipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalSessionCipher.h; sourceTree = "<group>"; };
-		9F6D1EC31DF05FA40095C471 /* SignalSessionCipher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalSessionCipher.m; sourceTree = "<group>"; };
-		9F6D1EC61DF05FD50095C471 /* SignalCipherText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalCipherText.h; sourceTree = "<group>"; };
-		9F6D1EC71DF05FD50095C471 /* SignalCiphertext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalCiphertext.m; sourceTree = "<group>"; };
-		9F6D1ECA1DF060D00095C471 /* SignalMessage-Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignalMessage-Internal.h"; sourceTree = "<group>"; };
-		9F6D1ECB1DF060D00095C471 /* SignalMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalMessage.h; sourceTree = "<group>"; };
-		9F6D1ECC1DF060D00095C471 /* SignalMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalMessage.m; sourceTree = "<group>"; };
 		9F7C19231DDDBC0900529703 /* SignalProtocolC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SignalProtocolC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F7C19261DDDBC0900529703 /* signal_protocol_c.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = signal_protocol_c.h; sourceTree = "<group>"; };
 		9F7C19271DDDBC0900529703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -443,15 +359,6 @@
 		9F7C19D51DDDBC1000529703 /* vpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vpool.h; sourceTree = "<group>"; };
 		9F7C19D61DDDBC1000529703 /* WhisperTextProtocol.pb-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "WhisperTextProtocol.pb-c.c"; sourceTree = "<group>"; };
 		9F7C19D71DDDBC1000529703 /* WhisperTextProtocol.pb-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WhisperTextProtocol.pb-c.h"; sourceTree = "<group>"; };
-		9F9898361DF03B6E006C7793 /* SignalStoreInMemoryStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalStoreInMemoryStorage.h; sourceTree = "<group>"; };
-		9F9898371DF03B6E006C7793 /* SignalStoreInMemoryStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalStoreInMemoryStorage.m; sourceTree = "<group>"; };
-		9F98983B1DF03CD1006C7793 /* SignalKeyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalKeyHelper.h; sourceTree = "<group>"; };
-		9F98983C1DF03CD1006C7793 /* SignalKeyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalKeyHelper.m; sourceTree = "<group>"; };
-		9F9898401DF03D3A006C7793 /* SignalPreKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalPreKey.h; sourceTree = "<group>"; };
-		9F9898411DF03D3A006C7793 /* SignalPreKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalPreKey.m; sourceTree = "<group>"; };
-		9F9898441DF03EB1006C7793 /* SignalSignedPreKey-Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignalSignedPreKey-Internal.h"; sourceTree = "<group>"; };
-		9F9898451DF03EB1006C7793 /* SignalSignedPreKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalSignedPreKey.h; sourceTree = "<group>"; };
-		9F9898461DF03EB1006C7793 /* SignalSignedPreKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalSignedPreKey.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -460,15 +367,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F1C12391DFAD1F700A3F848 /* SignalProtocolC.framework in Frameworks */,
-				9F1C123A1DFAD1F900A3F848 /* SignalProtocol.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F26AC121DF02AE400A2594F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9F26AC231DF02AFA00A2594F /* SignalProtocolC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,86 +393,10 @@
 			path = Demo;
 			sourceTree = "<group>";
 		};
-		9F1C1EF31DF01C7300A0631C /* Objective C Wrapper */ = {
-			isa = PBXGroup;
-			children = (
-				9F6D1EA61DF046850095C471 /* SignalError.h */,
-				9F6D1EA71DF046850095C471 /* SignalError.m */,
-				9F1C1EFD1DF01FA500A0631C /* Protocols */,
-				9F1C1EF81DF01EC200A0631C /* Models */,
-				9F1C1EEF1DF01BC900A0631C /* SignalContext.h */,
-				9F1C1EF01DF01BC900A0631C /* SignalContext.m */,
-				9F1C1EEB1DF0119500A0631C /* SignalCommonCryptoProvider.h */,
-				9F1C1EEC1DF0119500A0631C /* SignalCommonCryptoProvider.m */,
-				9F1C1EF41DF01D7600A0631C /* SignalStorage.h */,
-				9F1C1EF51DF01D7600A0631C /* SignalStorage.m */,
-				9F98983B1DF03CD1006C7793 /* SignalKeyHelper.h */,
-				9F98983C1DF03CD1006C7793 /* SignalKeyHelper.m */,
-				9F6D1EB81DF0520F0095C471 /* SignalSessionBuilder.h */,
-				9F6D1EB91DF0520F0095C471 /* SignalSessionBuilder.m */,
-			);
-			name = "Objective C Wrapper";
-			sourceTree = "<group>";
-		};
-		9F1C1EF81DF01EC200A0631C /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				9F6D1EB01DF04FD30095C471 /* SignalPreKeyBundle-Internal.h */,
-				9F6D1EB11DF04FD30095C471 /* SignalPreKeyBundle.h */,
-				9F6D1EB21DF04FD30095C471 /* SignalPreKeyBundle.m */,
-				9F1C1F071DF021FC00A0631C /* SignalKeyPair.h */,
-				9F1C1F0C1DF0240C00A0631C /* SignalKeyPair+Internal.h */,
-				9F1C1F081DF021FC00A0631C /* SignalKeyPair.m */,
-				9F1C1EF91DF01EC600A0631C /* SignalAddress.h */,
-				9F1C1EFA1DF01EC600A0631C /* SignalAddress.m */,
-				9F1C1F021DF020FC00A0631C /* SignalIdentityKeyPair.h */,
-				9F6D1EAA1DF047130095C471 /* SignalIdentityKeyPair-Internal.h */,
-				9F1C1F031DF020FC00A0631C /* SignalIdentityKeyPair.m */,
-				9F9898401DF03D3A006C7793 /* SignalPreKey.h */,
-				9F6D1EAE1DF047B70095C471 /* SignalPreKey-Internal.h */,
-				9F9898411DF03D3A006C7793 /* SignalPreKey.m */,
-				9F9898441DF03EB1006C7793 /* SignalSignedPreKey-Internal.h */,
-				9F9898451DF03EB1006C7793 /* SignalSignedPreKey.h */,
-				9F9898461DF03EB1006C7793 /* SignalSignedPreKey.m */,
-				9F6D1EBC1DF052370095C471 /* SignalPreKeyMessage+Internal.h */,
-				9F6D1EBD1DF052370095C471 /* SignalPreKeyMessage.h */,
-				9F6D1EBE1DF052370095C471 /* SignalPreKeyMessage.m */,
-				9F6D1EC61DF05FD50095C471 /* SignalCipherText.h */,
-				9F6D1EC71DF05FD50095C471 /* SignalCiphertext.m */,
-				9F6D1EC21DF05FA40095C471 /* SignalSessionCipher.h */,
-				9F6D1EC31DF05FA40095C471 /* SignalSessionCipher.m */,
-				9F6D1ECA1DF060D00095C471 /* SignalMessage-Internal.h */,
-				9F6D1ECB1DF060D00095C471 /* SignalMessage.h */,
-				9F6D1ECC1DF060D00095C471 /* SignalMessage.m */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		9F1C1EFD1DF01FA500A0631C /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				9F1C1EFE1DF01FB200A0631C /* SignalProtocols.h */,
-			);
-			name = Protocols;
-			sourceTree = "<group>";
-		};
-		9F26AC171DF02AE400A2594F /* SignalProtocol */ = {
-			isa = PBXGroup;
-			children = (
-				9F9898361DF03B6E006C7793 /* SignalStoreInMemoryStorage.h */,
-				9F9898371DF03B6E006C7793 /* SignalStoreInMemoryStorage.m */,
-				9F26AC181DF02AE400A2594F /* SignalProtocol.h */,
-				9F26AC191DF02AE400A2594F /* Info.plist */,
-				9F26AC241DF02B4100A2594F /* SignalProtocolUser.swift */,
-			);
-			path = SignalProtocol;
-			sourceTree = "<group>";
-		};
 		9F7C19191DDDBC0900529703 = {
 			isa = PBXGroup;
 			children = (
 				9F7C19251DDDBC0900529703 /* SignalProtocolC */,
-				9F26AC171DF02AE400A2594F /* SignalProtocol */,
 				9F1C12281DFAD1C500A3F848 /* Demo */,
 				9F7C19241DDDBC0900529703 /* Products */,
 			);
@@ -584,7 +406,6 @@
 			isa = PBXGroup;
 			children = (
 				9F7C19231DDDBC0900529703 /* SignalProtocolC.framework */,
-				9F26AC161DF02AE400A2594F /* SignalProtocol.framework */,
 				9F1C12271DFAD1C500A3F848 /* Demo.app */,
 			);
 			name = Products;
@@ -597,7 +418,6 @@
 				9F26AC2A1DF0310100A2594F /* SignalProtocolC.h */,
 				9F7C19261DDDBC0900529703 /* signal_protocol_c.h */,
 				9F7C19271DDDBC0900529703 /* Info.plist */,
-				9F1C1EF31DF01C7300A0631C /* Objective C Wrapper */,
 			);
 			path = SignalProtocolC;
 			sourceTree = "<group>";
@@ -835,36 +655,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9F26AC131DF02AE400A2594F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9F6D209E1DF1A68A0095C471 /* SignalStoreInMemoryStorage.h in Headers */,
-				9F26AC1A1DF02AE400A2594F /* SignalProtocol.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9F7C19201DDDBC0900529703 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F9898471DF03EB1006C7793 /* SignalSignedPreKey-Internal.h in Headers */,
 				9F7C19281DDDBC0900529703 /* signal_protocol_c.h in Headers */,
 				9F26AC2B1DF0312100A2594F /* SignalProtocolC.h in Headers */,
-				9F6D1EA81DF046850095C471 /* SignalError.h in Headers */,
-				9F1C1F001DF01FB200A0631C /* SignalProtocols.h in Headers */,
-				9F1C1F0A1DF021FC00A0631C /* SignalKeyPair.h in Headers */,
-				9F1C1EFB1DF01EC600A0631C /* SignalAddress.h in Headers */,
-				9F1C1F041DF020FC00A0631C /* SignalIdentityKeyPair.h in Headers */,
-				9F1C1EF11DF01BC900A0631C /* SignalContext.h in Headers */,
-				9F1C1EED1DF0119500A0631C /* SignalCommonCryptoProvider.h in Headers */,
-				9F6D1EC01DF052370095C471 /* SignalPreKeyMessage.h in Headers */,
-				9F1C1EF61DF01D7600A0631C /* SignalStorage.h in Headers */,
-				9F6D1EC81DF05FD50095C471 /* SignalCipherText.h in Headers */,
 				9F7C1A661DDDBC1000529703 /* session_cipher.h in Headers */,
 				9F7C1A4C1DDDBC1000529703 /* group_cipher.h in Headers */,
 				9F7C1A5D1DDDBC1000529703 /* sender_key.h in Headers */,
-				9F9898421DF03D3A006C7793 /* SignalPreKey.h in Headers */,
 				9F7C1A6E1DDDBC1000529703 /* signal_protocol.h in Headers */,
 				9F7C1A611DDDBC1000529703 /* sender_key_state.h in Headers */,
 				9F7C1A701DDDBC1000529703 /* signal_protocol_types.h in Headers */,
@@ -872,17 +671,14 @@
 				9F7C19DA1DDDBC1000529703 /* curve.h in Headers */,
 				9F7C1A501DDDBC1000529703 /* hkdf.h in Headers */,
 				9F7C1A6A1DDDBC1000529703 /* session_record.h in Headers */,
-				9F6D1EBF1DF052370095C471 /* SignalPreKeyMessage+Internal.h in Headers */,
 				9F7C1A5F1DDDBC1000529703 /* sender_key_record.h in Headers */,
 				9F7C1A521DDDBC1000529703 /* key_helper.h in Headers */,
 				9F7C1A5B1DDDBC1000529703 /* ratchet.h in Headers */,
 				9F7C1A681DDDBC1000529703 /* session_pre_key.h in Headers */,
 				9F7C1A4E1DDDBC1000529703 /* group_session_builder.h in Headers */,
-				9F6D1EBA1DF0520F0095C471 /* SignalSessionBuilder.h in Headers */,
 				9F7C1A631DDDBC1000529703 /* session_builder.h in Headers */,
 				9F7C1A6C1DDDBC1000529703 /* session_state.h in Headers */,
 				9F7C1A481DDDBC1000529703 /* fingerprint.h in Headers */,
-				9F6D1EAF1DF047B70095C471 /* SignalPreKey-Internal.h in Headers */,
 				9F7C1A331DDDBC1000529703 /* crypto_int64.h in Headers */,
 				9F7C1A711DDDBC1100529703 /* utarray.h in Headers */,
 				9F7C1A761DDDBC1100529703 /* vpool.h in Headers */,
@@ -901,30 +697,23 @@
 				9F7C1A571DDDBC1000529703 /* protobuf-c.h in Headers */,
 				9F7C19DD1DDDBC1000529703 /* curve25519-donna.h in Headers */,
 				9F7C1A781DDDBC1100529703 /* WhisperTextProtocol.pb-c.h in Headers */,
-				9F6D1EAB1DF047220095C471 /* SignalIdentityKeyPair-Internal.h in Headers */,
 				9F7C19F21DDDBC1000529703 /* keygen.h in Headers */,
 				9F7C1A361DDDBC1000529703 /* crypto_uint32.h in Headers */,
 				9F7C1A641DDDBC1000529703 /* session_builder_internal.h in Headers */,
 				9F7C1A731DDDBC1100529703 /* utlist.h in Headers */,
 				9F7C1A011DDDBC1000529703 /* xeddsa.h in Headers */,
-				9F6D1EB41DF04FD30095C471 /* SignalPreKeyBundle.h in Headers */,
-				9F6D1EB31DF04FD30095C471 /* SignalPreKeyBundle-Internal.h in Headers */,
 				9F7C19DF1DDDBC1000529703 /* compare.h in Headers */,
 				9F7C1A741DDDBC1100529703 /* utstring.h in Headers */,
 				9F7C1A321DDDBC1000529703 /* crypto_int32.h in Headers */,
-				9F6D1ECD1DF060D00095C471 /* SignalMessage-Internal.h in Headers */,
 				9F7C1A051DDDBC1000529703 /* base2.h in Headers */,
 				9F7C1A371DDDBC1000529703 /* crypto_uint64.h in Headers */,
 				9F7C1A541DDDBC1000529703 /* LocalStorageProtocol.pb-c.h in Headers */,
-				9F98983E1DF03CD1006C7793 /* SignalKeyHelper.h in Headers */,
 				9F7C19FF1DDDBC1000529703 /* vxeddsa.h in Headers */,
 				9F7C1A4A1DDDBC1000529703 /* FingerprintProtocol.pb-c.h in Headers */,
 				9F7C1A261DDDBC1000529703 /* ge_p2_dbl.h in Headers */,
-				9F6D1ECE1DF060D00095C471 /* SignalMessage.h in Headers */,
 				9F7C19E31DDDBC1000529703 /* curve_sigs.h in Headers */,
 				9F7C1A351DDDBC1000529703 /* crypto_sign_edwards25519sha512batch.h in Headers */,
 				9F7C1A031DDDBC1000529703 /* zeroize.h in Headers */,
-				9F6D1EC41DF05FA40095C471 /* SignalSessionCipher.h in Headers */,
 				9F7C19E01DDDBC1000529703 /* crypto_additions.h in Headers */,
 				9F7C19FB1DDDBC1000529703 /* utility.h in Headers */,
 				9F7C1A721DDDBC1100529703 /* uthash.h in Headers */,
@@ -934,7 +723,6 @@
 				9F7C1A341DDDBC1000529703 /* crypto_sign.h in Headers */,
 				9F7C1A6F1DDDBC1000529703 /* signal_protocol_internal.h in Headers */,
 				9F7C1A191DDDBC1000529703 /* ge.h in Headers */,
-				9F9898481DF03EB1006C7793 /* SignalSignedPreKey.h in Headers */,
 				9F7C19E11DDDBC1000529703 /* crypto_hash_sha512.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -959,24 +747,6 @@
 			productName = Demo;
 			productReference = 9F1C12271DFAD1C500A3F848 /* Demo.app */;
 			productType = "com.apple.product-type.application";
-		};
-		9F26AC151DF02AE400A2594F /* SignalProtocol */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9F26AC1F1DF02AE400A2594F /* Build configuration list for PBXNativeTarget "SignalProtocol" */;
-			buildPhases = (
-				9F26AC111DF02AE400A2594F /* Sources */,
-				9F26AC121DF02AE400A2594F /* Frameworks */,
-				9F26AC131DF02AE400A2594F /* Headers */,
-				9F26AC141DF02AE400A2594F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SignalProtocol;
-			productName = SignalProtocol;
-			productReference = 9F26AC161DF02AE400A2594F /* SignalProtocol.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 		9F7C19221DDDBC0900529703 /* SignalProtocolC */ = {
 			isa = PBXNativeTarget;
@@ -1003,7 +773,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Bakken&Bæck";
 				TargetAttributes = {
 					9F1C12261DFAD1C500A3F848 = {
@@ -1011,16 +781,10 @@
 						DevelopmentTeam = 29X3GG489T;
 						ProvisioningStyle = Automatic;
 					};
-					9F26AC151DF02AE400A2594F = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 29X3GG489T;
-						LastSwiftMigration = 0810;
-						ProvisioningStyle = Automatic;
-					};
 					9F7C19221DDDBC0900529703 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 29X3GG489T;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1039,7 +803,6 @@
 			projectRoot = "";
 			targets = (
 				9F7C19221DDDBC0900529703 /* SignalProtocolC */,
-				9F26AC151DF02AE400A2594F /* SignalProtocol */,
 				9F1C12261DFAD1C500A3F848 /* Demo */,
 			);
 		};
@@ -1053,13 +816,6 @@
 				9F1C12341DFAD1C500A3F848 /* LaunchScreen.storyboard in Resources */,
 				9F1C12311DFAD1C500A3F848 /* Assets.xcassets in Resources */,
 				9F1C122F1DFAD1C500A3F848 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F26AC141DF02AE400A2594F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1082,15 +838,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F26AC111DF02AE400A2594F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9F26AC251DF02B4100A2594F /* SignalProtocolUser.swift in Sources */,
-				9F6D209F1DF1A68A0095C471 /* SignalStoreInMemoryStorage.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9F7C191E1DDDBC0900529703 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1098,12 +845,9 @@
 				9F7C19FA1DDDBC1000529703 /* utility.c in Sources */,
 				9F7C1A281DDDBC1000529703 /* ge_p3_dbl.c in Sources */,
 				9F7C1A531DDDBC1000529703 /* LocalStorageProtocol.pb-c.c in Sources */,
-				9F1C1F051DF020FC00A0631C /* SignalIdentityKeyPair.m in Sources */,
-				9F1C1EEE1DF0119500A0631C /* SignalCommonCryptoProvider.m in Sources */,
 				9F7C19E91DDDBC1000529703 /* ge_is_small_order.c in Sources */,
 				9F7C1A561DDDBC1000529703 /* protobuf-c.c in Sources */,
 				9F7C1A2B1DDDBC1000529703 /* ge_p3_tobytes.c in Sources */,
-				9F6D1EA91DF046850095C471 /* SignalError.m in Sources */,
 				9F7C19F01DDDBC1000529703 /* ge_scalarmult_cofactor.c in Sources */,
 				9F7C1A511DDDBC1000529703 /* key_helper.c in Sources */,
 				9F7C1A0D1DDDBC1000529703 /* fe_copy.c in Sources */,
@@ -1112,40 +856,31 @@
 				9F7C1A581DDDBC1000529703 /* protocol.c in Sources */,
 				9F7C1A4B1DDDBC1000529703 /* group_cipher.c in Sources */,
 				9F7C1A4D1DDDBC1000529703 /* group_session_builder.c in Sources */,
-				9F6D1EB51DF04FD30095C471 /* SignalPreKeyBundle.m in Sources */,
 				9F7C1A021DDDBC1000529703 /* zeroize.c in Sources */,
 				9F7C19DE1DDDBC1000529703 /* compare.c in Sources */,
 				9F7C1A5C1DDDBC1000529703 /* sender_key.c in Sources */,
 				9F7C1A161DDDBC1000529703 /* fe_sq2.c in Sources */,
-				9F1C1EFC1DF01EC600A0631C /* SignalAddress.m in Sources */,
 				9F7C1A651DDDBC1000529703 /* session_cipher.c in Sources */,
 				9F7C19FE1DDDBC1000529703 /* vxeddsa.c in Sources */,
-				9F1C1EF21DF01BC900A0631C /* SignalContext.m in Sources */,
 				9F7C1A131DDDBC1000529703 /* fe_neg.c in Sources */,
 				9F7C1A451DDDBC1000529703 /* device_consistency.c in Sources */,
 				9F7C19EF1DDDBC1000529703 /* ge_scalarmult.c in Sources */,
 				9F7C1A471DDDBC1000529703 /* fingerprint.c in Sources */,
 				9F7C1A391DDDBC1000529703 /* blocks.c in Sources */,
 				9F7C1A411DDDBC1000529703 /* sign.c in Sources */,
-				9F6D1EBB1DF0520F0095C471 /* SignalSessionBuilder.m in Sources */,
 				9F7C1A5A1DDDBC1000529703 /* ratchet.c in Sources */,
-				9F9898491DF03EB1006C7793 /* SignalSignedPreKey.m in Sources */,
 				9F7C1A2E1DDDBC1000529703 /* ge_sub.c in Sources */,
 				9F7C19EC1DDDBC1000529703 /* ge_montx_to_p3.c in Sources */,
 				9F7C19E41DDDBC1000529703 /* elligator.c in Sources */,
-				9F98983F1DF03CD1006C7793 /* SignalKeyHelper.m in Sources */,
-				9F6D1ECF1DF060D00095C471 /* SignalMessage.m in Sources */,
 				9F7C1A691DDDBC1000529703 /* session_record.c in Sources */,
 				9F7C1A121DDDBC1000529703 /* fe_mul.c in Sources */,
 				9F7C19F81DDDBC1000529703 /* uopen_modified.c in Sources */,
 				9F7C1A0B1DDDBC1000529703 /* fe_add.c in Sources */,
 				9F7C19D91DDDBC1000529703 /* curve.c in Sources */,
-				9F1C1EF71DF01D7600A0631C /* SignalStorage.m in Sources */,
 				9F7C1A181DDDBC1000529703 /* fe_tobytes.c in Sources */,
 				9F7C19F11DDDBC1000529703 /* keygen.c in Sources */,
 				9F7C1A621DDDBC1000529703 /* session_builder.c in Sources */,
 				9F7C19E81DDDBC1000529703 /* fe_sqrt.c in Sources */,
-				9F6D1EC91DF05FD50095C471 /* SignalCiphertext.m in Sources */,
 				9F7C1A231DDDBC1000529703 /* ge_p1p1_to_p3.c in Sources */,
 				9F7C19E51DDDBC1000529703 /* fe_isequal.c in Sources */,
 				9F7C19F91DDDBC1000529703 /* usign_modified.c in Sources */,
@@ -1158,7 +893,6 @@
 				9F7C1A671DDDBC1000529703 /* session_pre_key.c in Sources */,
 				9F7C19FD1DDDBC1000529703 /* vsign_modified.c in Sources */,
 				9F7C1A221DDDBC1000529703 /* ge_p1p1_to_p2.c in Sources */,
-				9F6D1EC51DF05FA40095C471 /* SignalSessionCipher.m in Sources */,
 				9F7C19E71DDDBC1000529703 /* fe_montx_to_edy.c in Sources */,
 				9F7C1A111DDDBC1000529703 /* fe_isnonzero.c in Sources */,
 				9F7C1A4F1DDDBC1000529703 /* hkdf.c in Sources */,
@@ -1185,7 +919,6 @@
 				9F7C1A151DDDBC1000529703 /* fe_sq.c in Sources */,
 				9F7C1A601DDDBC1000529703 /* sender_key_state.c in Sources */,
 				9F7C19F51DDDBC1000529703 /* sc_cmov.c in Sources */,
-				9F1C1F0B1DF021FC00A0631C /* SignalKeyPair.m in Sources */,
 				9F7C1A241DDDBC1000529703 /* ge_p2_0.c in Sources */,
 				9F7C1A301DDDBC1000529703 /* ge_tobytes.c in Sources */,
 				9F7C19ED1DDDBC1000529703 /* ge_neg.c in Sources */,
@@ -1193,14 +926,12 @@
 				9F7C1A2C1DDDBC1000529703 /* ge_precomp_0.c in Sources */,
 				9F7C1A001DDDBC1000529703 /* xeddsa.c in Sources */,
 				9F7C1A141DDDBC1000529703 /* fe_pow22523.c in Sources */,
-				9F9898431DF03D3A006C7793 /* SignalPreKey.m in Sources */,
 				9F7C1A6D1DDDBC1000529703 /* signal_protocol.c in Sources */,
 				9F7C1A491DDDBC1000529703 /* FingerprintProtocol.pb-c.c in Sources */,
 				9F7C19F41DDDBC1000529703 /* sc_clamp.c in Sources */,
 				9F7C1A201DDDBC1000529703 /* ge_msub.c in Sources */,
 				9F7C19F31DDDBC1000529703 /* open_modified.c in Sources */,
 				9F7C19E21DDDBC1000529703 /* curve_sigs.c in Sources */,
-				9F6D1EC11DF052370095C471 /* SignalPreKeyMessage.m in Sources */,
 				9F7C1A5E1DDDBC1000529703 /* sender_key_record.c in Sources */,
 				9F7C1A271DDDBC1000529703 /* ge_p3_0.c in Sources */,
 				9F7C1A0C1DDDBC1000529703 /* fe_cmov.c in Sources */,
@@ -1233,6 +964,7 @@
 		9F1C12361DFAD1C500A3F848 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 29X3GG489T;
 				INFOPLIST_FILE = Demo/Info.plist;
@@ -1248,57 +980,13 @@
 		9F1C12371DFAD1C500A3F848 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 29X3GG489T;
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		9F26AC201DF02AE400A2594F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 29X3GG489T;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SignalProtocol/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.SignalProtocol;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		9F26AC211DF02AE400A2594F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 29X3GG489T;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SignalProtocol/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.SignalProtocol;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1322,6 +1010,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1373,6 +1062,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1393,6 +1083,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1451,14 +1142,6 @@
 			buildConfigurations = (
 				9F1C12361DFAD1C500A3F848 /* Debug */,
 				9F1C12371DFAD1C500A3F848 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		9F26AC1F1DF02AE400A2594F /* Build configuration list for PBXNativeTarget "SignalProtocol" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9F26AC201DF02AE400A2594F /* Debug */,
-				9F26AC211DF02AE400A2594F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
